@@ -8,3 +8,6 @@ If you don't have CML you can acquire it here https://www.cisco.com/c/en/us/prod
 If you are interrested in enrolling in INE CCNP ENCOR Course you can find that here https://my.ine.com/Networking/learning-paths/04e78954-b839-4484-8bd8-94c4e8779c72/enterprise-core-exam-350-401-encor 
 
 I hope that this is useful for you, and much as it has been for me. 
+
+To upload the file, go to your CML Dashboard, and click Import on the top right. Then Select the YAML file and stanr the lab.
+
