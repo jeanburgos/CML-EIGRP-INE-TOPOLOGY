@@ -11,3 +11,4 @@ I hope that this is useful for you, and much as it has been for me.
 
 To upload the file, go to your CML Dashboard, and click Import on the top right. Then Select the YAML file and stanr the lab.
 
+![image](https://github.com/user-attachments/assets/cdfb6c2a-1625-42cf-9474-c26c7718da9d)
