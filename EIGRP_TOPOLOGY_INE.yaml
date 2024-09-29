@@ -30,9 +30,9 @@ annotations:
     line_start: null
     thickness: 1
     type: line
-    x1: -760.0
+    x1: -800.0
     y1: 280.0
-    x2: -760.0
+    x2: -800.0
     y2: 80.0
     z_index: 2
   - border_color: '#808080FF'
@@ -115,9 +115,9 @@ annotations:
     thickness: 1
     type: line
     x1: -720.0
-    y1: 80.0
+    y1: 120.0
     x2: -800.0
-    y2: 80.0
+    y2: 120.0
     z_index: 9
   - border_color: '#808080FF'
     border_style: ''
@@ -126,7 +126,7 @@ annotations:
     line_start: null
     thickness: 1
     type: line
-    x1: -640.0
+    x1: -600.0
     y1: 200.0
     x2: -440.0
     y2: 360.0
@@ -139,8 +139,8 @@ annotations:
     thickness: 1
     type: line
     x1: -440.0
-    y1: 80.0
-    x2: -640.0
+    y1: 40.0
+    x2: -600.0
     y2: 200.0
     z_index: 11
   - border_color: '#000000'
@@ -163,7 +163,7 @@ annotations:
     x1: -320.0
     y1: 160.0
     x2: -440.0
-    y2: 80.0
+    y2: 40.0
     z_index: 0
   - border_color: '#808080FF'
     border_style: ''
@@ -292,9 +292,9 @@ annotations:
     line_start: null
     thickness: 1
     type: line
-    x1: 80.0
+    x1: 40.0
     y1: 200.0
-    x2: 80.0
+    x2: 40.0
     y2: 280.0
     z_index: 24
   - border_color: '#808080FF'
@@ -352,10 +352,10 @@ annotations:
     line_start: null
     thickness: 1
     type: line
-    x1: -40.0
-    y1: 400.0
-    x2: 80.0
-    y2: 400.0
+    x1: -80.0
+    y1: 440.0
+    x2: 40.0
+    y2: 440.0
     z_index: 29
   - border_color: '#808080FF'
     border_style: ''
@@ -425,7 +425,7 @@ annotations:
     thickness: 1
     type: line
     x1: -880.0
-    y1: 120.0
+    y1: 160.0
     x2: -880.0
     y2: 80.0
     z_index: 35
@@ -437,9 +437,9 @@ annotations:
     thickness: 1
     type: line
     x1: -880.0
-    y1: 80.0
+    y1: 120.0
     x2: -800.0
-    y2: 80.0
+    y2: 120.0
     z_index: 36
   - border_color: '#00000000'
     border_style: ''
@@ -461,7 +461,7 @@ annotations:
     color: '#808080FF'
     rotation: 0
     text_bold: false
-    text_content: 155.1.0.1/24
+    text_content: 155.1.100.1/24
     text_font: monospace
     text_italic: false
     text_size: 6
@@ -476,7 +476,7 @@ annotations:
     color: '#808080FF'
     rotation: 0
     text_bold: false
-    text_content: 155.1.0.2/24
+    text_content: 155.1.100.2/24
     text_font: monospace
     text_italic: false
     text_size: 6
@@ -491,14 +491,14 @@ annotations:
     color: '#808080FF'
     rotation: 0
     text_bold: false
-    text_content: 155.1.0.3/24
+    text_content: 155.1.100.3/24
     text_font: monospace
     text_italic: false
     text_size: 6
     text_unit: pt
     thickness: 1
     type: text
-    x1: -600.0
+    x1: -560.0
     y1: 200.0
     z_index: 38
   - border_color: '#00000000'
@@ -641,7 +641,7 @@ annotations:
     color: '#808080FF'
     rotation: 0
     text_bold: false
-    text_content: 155.1.0.5/24
+    text_content: 155.1.100.5/24
     text_font: monospace
     text_italic: false
     text_size: 6
@@ -756,6 +756,66 @@ annotations:
     x1: -960.0
     y1: 80.0
     z_index: 38
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#808080FF'
+    rotation: 0
+    text_bold: false
+    text_content: 155.1.0.R/24
+    text_font: monospace
+    text_italic: false
+    text_size: 9
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -320.0
+    y1: 240.0
+    z_index: 39
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    thickness: 1
+    type: ellipse
+    x1: -520.0
+    y1: 0.0
+    x2: 40.0
+    y2: 40.0
+    z_index: 40
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    thickness: 1
+    type: ellipse
+    x1: -800.0
+    y1: 100.0
+    x2: 40.0
+    y2: 60.0
+    z_index: 41
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    thickness: 1
+    type: ellipse
+    x1: -800.0
+    y1: 300.0
+    x2: 40.0
+    y2: 60.0
+    z_index: 42
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#808080FF'
+    rotation: 0
+    text_bold: false
+    text_content: Classic
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -1000.0
+    y1: -40.0
+    z_index: 43
 nodes:
   - boot_disk_size: null
     configuration:
@@ -960,9 +1020,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 3445 bytes
+          Current configuration : 3520 bytes
           !
-          ! Last configuration change at 01:20:52 UTC Fri Sep 27 2024
+          ! Last configuration change at 05:29:13 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1052,6 +1112,7 @@ nodes:
           interface GigabitEthernet0/1.79
            encapsulation dot1Q 79
            ip address 155.1.79.7 255.255.255.0
+           ip summary-address eigrp 300 150.1.0.0 255.255.240.0
           !
           interface GigabitEthernet0/2
            no ip address
@@ -1068,8 +1129,9 @@ nodes:
            media-type rj45
           !
           !
-          router eigrp 100
-           network 0.0.0.0
+          router eigrp 300
+           network 150.1.0.0
+           network 155.1.0.0
           !
           ip forward-protocol nd
           !
@@ -1134,7 +1196,7 @@ nodes:
     ram: null
     tags: []
     x: -800
-    y: 80
+    y: 120
     interfaces:
       - id: i0
         label: Loopback0
@@ -1354,9 +1416,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4043 bytes
+          Current configuration : 4242 bytes
           !
-          ! Last configuration change at 01:20:47 UTC Fri Sep 27 2024
+          ! Last configuration change at 05:29:09 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1432,13 +1494,16 @@ nodes:
           interface Tunnel0
            ip address 155.1.0.3 255.255.255.0
            no ip redirects
-           ip nhrp map 155.1.0.5 155.1.100.5
-           ip nhrp map multicast 155.1.100.5
-           ip nhrp network-id 100
+           ip mtu 1400
+           ip nhrp map 155.1.0.5 169.254.100.5
+           ip nhrp map multicast 169.254.100.5
+           ip nhrp network-id 1
+           ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
+           ip tcp adjust-mss 1360
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
-           tunnel key 100
+           tunnel key 150
            tunnel protection ipsec profile dmvpn-ipsec
           !
           interface GigabitEthernet0/0
@@ -1467,8 +1532,9 @@ nodes:
            ip address 155.1.23.3 255.255.255.0
           !
           interface GigabitEthernet0/1.100
+           bandwidth 100000
            encapsulation dot1Q 100
-           ip address 155.1.100.3 255.255.255.0
+           ip address 169.254.100.3 255.255.255.0
           !
           interface GigabitEthernet0/2
            no ip address
@@ -1485,9 +1551,15 @@ nodes:
            media-type rj45
           !
           !
-          router eigrp 100
-           network 0.0.0.0
-           network 150.1.0.0
+          router eigrp XYZ
+           !
+           address-family ipv4 unicast autonomous-system 300
+            !
+            topology base
+            exit-af-topology
+            network 150.1.0.0
+            network 155.1.0.0
+           exit-address-family
           !
           ip forward-protocol nd
           !
@@ -1551,7 +1623,7 @@ nodes:
     parameters: {}
     ram: null
     tags: []
-    x: -640
+    x: -600
     y: 200
     interfaces:
       - id: i0
@@ -1579,9 +1651,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4053 bytes
+          Current configuration : 4321 bytes
           !
-          ! Last configuration change at 01:20:46 UTC Fri Sep 27 2024
+          ! Last configuration change at 05:29:07 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1657,13 +1729,16 @@ nodes:
           interface Tunnel0
            ip address 155.1.0.1 255.255.255.0
            no ip redirects
-           ip nhrp map 155.1.0.5 155.1.100.5
-           ip nhrp map multicast 155.1.100.5
-           ip nhrp network-id 100
+           ip mtu 1400
+           ip nhrp map 155.1.0.5 169.254.100.5
+           ip nhrp map multicast 169.254.100.5
+           ip nhrp network-id 1
+           ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
+           ip tcp adjust-mss 1360
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
-           tunnel key 100
+           tunnel key 150
            tunnel protection ipsec profile dmvpn-ipsec
           !
           interface GigabitEthernet0/0
@@ -1684,16 +1759,22 @@ nodes:
            ip address 155.1.1.1 255.255.255.0
           !
           interface GigabitEthernet0/1.13
+           bandwidth 100000
            encapsulation dot1Q 13
            ip address 155.1.13.1 255.255.255.0
+           delay 100
           !
           interface GigabitEthernet0/1.100
+           bandwidth 100000
            encapsulation dot1Q 100
-           ip address 155.1.100.1 255.255.255.0
+           ip address 169.254.100.1 255.255.255.0
+           delay 100
           !
           interface GigabitEthernet0/1.146
+           bandwidth 100000
            encapsulation dot1Q 146
            ip address 155.1.146.1 255.255.255.0
+           delay 100
           !
           interface GigabitEthernet0/2
            no ip address
@@ -1710,9 +1791,15 @@ nodes:
            media-type rj45
           !
           !
-          router eigrp 100
-           network 0.0.0.0
-           network 150.1.0.0
+          router eigrp XYZ
+           !
+           address-family ipv4 unicast autonomous-system 300
+            !
+            topology base
+            exit-af-topology
+            network 150.1.0.0
+            network 155.1.0.0
+           exit-address-family
           !
           ip forward-protocol nd
           !
@@ -1777,7 +1864,7 @@ nodes:
     ram: null
     tags: []
     x: -440
-    y: 80
+    y: 40
     interfaces:
       - id: i0
         label: Loopback0
@@ -1804,9 +1891,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 3931 bytes
+          Current configuration : 4147 bytes
           !
-          ! Last configuration change at 01:21:16 UTC Fri Sep 27 2024
+          ! Last configuration change at 05:29:07 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1882,13 +1969,16 @@ nodes:
           interface Tunnel0
            ip address 155.1.0.2 255.255.255.0
            no ip redirects
-           ip nhrp map 155.1.0.5 155.1.100.5
-           ip nhrp map multicast 155.1.100.5
-           ip nhrp network-id 100
+           ip mtu 1400
+           ip nhrp map 155.1.0.5 169.254.100.5
+           ip nhrp map multicast 169.254.100.5
+           ip nhrp network-id 1
+           ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
+           ip tcp adjust-mss 1360
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
-           tunnel key 100
+           tunnel key 150
            tunnel protection ipsec profile dmvpn-ipsec
           !
           interface GigabitEthernet0/0
@@ -1913,8 +2003,9 @@ nodes:
            ip address 155.1.23.2 255.255.255.0
           !
           interface GigabitEthernet0/1.100
+           bandwidth 100000
            encapsulation dot1Q 100
-           ip address 155.1.100.2 255.255.255.0
+           ip address 169.254.100.2 255.255.255.0
           !
           interface GigabitEthernet0/2
            no ip address
@@ -1931,8 +2022,15 @@ nodes:
            media-type rj45
           !
           !
-          router eigrp 100
-           network 150.1.0.0
+          router eigrp XYZ
+           !
+           address-family ipv4 unicast autonomous-system 300
+            !
+            topology base
+            exit-af-topology
+            network 150.1.0.0
+            network 155.1.0.0
+           exit-address-family
           !
           ip forward-protocol nd
           !
@@ -2024,9 +2122,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4027 bytes
+          Current configuration : 4470 bytes
           !
-          ! Last configuration change at 01:20:47 UTC Fri Sep 27 2024
+          ! Last configuration change at 05:29:09 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -2102,13 +2200,16 @@ nodes:
           interface Tunnel0
            ip address 155.1.0.4 255.255.255.0
            no ip redirects
-           ip nhrp map 155.1.0.5 155.1.100.5
-           ip nhrp map multicast 155.1.100.5
-           ip nhrp network-id 100
+           ip mtu 1400
+           ip nhrp map 155.1.0.5 169.254.100.5
+           ip nhrp map multicast 169.254.100.5
+           ip nhrp network-id 1
+           ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
+           ip tcp adjust-mss 1360
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
-           tunnel key 100
+           tunnel key 150
            tunnel protection ipsec profile dmvpn-ipsec
           !
           interface GigabitEthernet0/0
@@ -2129,16 +2230,21 @@ nodes:
            ip address 155.1.4.4 255.255.255.0
           !
           interface GigabitEthernet0/1.45
+           bandwidth 100000
            encapsulation dot1Q 45
            ip address 155.1.45.4 255.255.255.0
+           delay 99
           !
           interface GigabitEthernet0/1.100
+           bandwidth 100000
            encapsulation dot1Q 100
-           ip address 155.1.100.4 255.255.255.0
+           ip address 169.254.100.4 255.255.255.0
+           delay 1000
           !
           interface GigabitEthernet0/1.146
            encapsulation dot1Q 146
            ip address 155.1.146.4 255.255.255.0
+           delay 1000
           !
           interface GigabitEthernet0/2
            no ip address
@@ -2155,8 +2261,20 @@ nodes:
            media-type rj45
           !
           !
-          router eigrp 100
-           network 0.0.0.0
+          router eigrp XYZ
+           !
+           address-family ipv4 unicast autonomous-system 300
+            !
+            af-interface GigabitEthernet0/1.100
+             summary-address 150.1.0.0 255.255.240.0
+            exit-af-interface
+            !
+            topology base
+             summary-metric 150.1.0.0/20 100000 1000 254 255 1500 distance 90
+            exit-af-topology
+            network 150.1.0.0
+            network 155.1.0.0
+           exit-address-family
           !
           ip forward-protocol nd
           !
@@ -2248,9 +2366,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 3960 bytes
+          Current configuration : 4276 bytes
           !
-          ! Last configuration change at 01:20:45 UTC Fri Sep 27 2024
+          ! Last configuration change at 05:29:07 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -2321,16 +2439,19 @@ nodes:
           !
           !
           interface Loopback0
-           ip address 150.1.5.5 255.255.255.0
+           ip address 150.1.5.5 255.255.255.255
           !
           interface Tunnel0
            ip address 155.1.0.5 255.255.255.0
            no ip redirects
+           ip mtu 1400
            no ip split-horizon eigrp 100
-           ip nhrp network-id 100
+           ip nhrp network-id 1
+           ip tcp adjust-mss 1360
+           delay 1000
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
-           tunnel key 100
+           tunnel key 150
            tunnel protection ipsec profile dmvpn-ipsec
           !
           interface GigabitEthernet0/0
@@ -2351,16 +2472,21 @@ nodes:
            ip address 155.1.5.5 255.255.255.0
           !
           interface GigabitEthernet0/1.45
+           bandwidth 100000
            encapsulation dot1Q 45
            ip address 155.1.45.5 255.255.255.0
+           delay 100
+           shutdown
           !
           interface GigabitEthernet0/1.58
            encapsulation dot1Q 58
            ip address 155.1.58.5 255.255.255.0
           !
           interface GigabitEthernet0/1.100
+           bandwidth 100000
            encapsulation dot1Q 100
-           ip address 155.1.100.5 255.255.255.0
+           ip address 169.254.100.5 255.255.255.0
+           delay 1000
           !
           interface GigabitEthernet0/2
            no ip address
@@ -2377,8 +2503,15 @@ nodes:
            media-type rj45
           !
           !
-          router eigrp 100
-           network 0.0.0.0
+          router eigrp XYZ
+           !
+           address-family ipv4 unicast autonomous-system 300
+            !
+            topology base
+            exit-af-topology
+            network 150.1.0.0
+            network 155.1.0.0
+           exit-address-family
           !
           ip forward-protocol nd
           !
@@ -2386,6 +2519,8 @@ nodes:
           no ip http server
           no ip http secure-server
           !
+          !
+          ip prefix-list LEAKED_PREFIX seq 5 permit 150.1.10.10/32
           ipv6 ioam timestamp
           !
           !
