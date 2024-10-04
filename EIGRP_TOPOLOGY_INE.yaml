@@ -773,7 +773,7 @@ annotations:
     z_index: 39
   - border_color: '#808080FF'
     border_style: ''
-    color: '#FFFFFFFF'
+    color: '#FFFFFF30'
     thickness: 1
     type: ellipse
     x1: -520.0
@@ -783,23 +783,23 @@ annotations:
     z_index: 40
   - border_color: '#808080FF'
     border_style: ''
-    color: '#FFFFFFFF'
+    color: '#FFFFFF5B'
     thickness: 1
     type: ellipse
     x1: -800.0
-    y1: 100.0
+    y1: 120.0
     x2: 40.0
-    y2: 60.0
+    y2: 40.0
     z_index: 41
   - border_color: '#808080FF'
     border_style: ''
-    color: '#FFFFFFFF'
+    color: '#FFFFFF2A'
     thickness: 1
     type: ellipse
     x1: -800.0
-    y1: 300.0
+    y1: 280.0
     x2: 40.0
-    y2: 60.0
+    y2: 40.0
     z_index: 42
   - border_color: '#00000000'
     border_style: ''
@@ -816,6 +816,16 @@ annotations:
     x1: -1000.0
     y1: -40.0
     z_index: 43
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFF5B'
+    thickness: 1
+    type: ellipse
+    x1: -960.0
+    y1: -40.0
+    x2: 40.0
+    y2: 40.0
+    z_index: 41
 nodes:
   - boot_disk_size: null
     configuration:
@@ -1022,7 +1032,7 @@ nodes:
 
           Current configuration : 3520 bytes
           !
-          ! Last configuration change at 05:29:13 UTC Sun Sep 29 2024
+          ! Last configuration change at 06:59:31 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1416,9 +1426,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4242 bytes
+          Current configuration : 4557 bytes
           !
-          ! Last configuration change at 05:29:09 UTC Sun Sep 29 2024
+          ! Last configuration change at 06:59:26 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1452,8 +1462,10 @@ nodes:
           !
           !
           !
+          no ip domain lookup
           ip cef
-          no ipv6 cef
+          ipv6 unicast-routing
+          ipv6 cef
           !
           multilink bundle-name authenticated
           !
@@ -1490,8 +1502,10 @@ nodes:
           !
           interface Loopback0
            ip address 150.1.3.3 255.255.255.255
+           ipv6 address 2001:150:3:3::3/128
           !
           interface Tunnel0
+           bandwidth 1000000
            ip address 155.1.0.3 255.255.255.0
            no ip redirects
            ip mtu 1400
@@ -1501,6 +1515,7 @@ nodes:
            ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
            ip tcp adjust-mss 1360
+           delay 100
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
            tunnel key 150
@@ -1524,17 +1539,26 @@ nodes:
            ip address 155.1.3.3 255.255.255.0
           !
           interface GigabitEthernet0/1.13
+           bandwidth 100000
            encapsulation dot1Q 13
            ip address 155.1.13.3 255.255.255.0
+           delay 1000
+           ipv6 address 2001:155:1:13::3/64
           !
           interface GigabitEthernet0/1.23
            encapsulation dot1Q 23
            ip address 155.1.23.3 255.255.255.0
+           shutdown
+           ipv6 address 2001:155:1:23::3/64
+          !
+          interface GigabitEthernet0/1.37
+           ipv6 address 2001:155:1:37::3/64
           !
           interface GigabitEthernet0/1.100
            bandwidth 100000
            encapsulation dot1Q 100
            ip address 169.254.100.3 255.255.255.0
+           ipv6 address 2001:169:254:100::3/64
           !
           interface GigabitEthernet0/2
            no ip address
@@ -1651,9 +1675,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4321 bytes
+          Current configuration : 4531 bytes
           !
-          ! Last configuration change at 05:29:07 UTC Sun Sep 29 2024
+          ! Last configuration change at 06:59:24 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1687,8 +1711,10 @@ nodes:
           !
           !
           !
+          no ip domain lookup
           ip cef
-          no ipv6 cef
+          ipv6 unicast-routing
+          ipv6 cef
           !
           multilink bundle-name authenticated
           !
@@ -1725,8 +1751,10 @@ nodes:
           !
           interface Loopback0
            ip address 150.1.1.1 255.255.255.255
+           ipv6 address 2001:150:1:1::1/128
           !
           interface Tunnel0
+           bandwidth 1000000
            ip address 155.1.0.1 255.255.255.0
            no ip redirects
            ip mtu 1400
@@ -1736,6 +1764,7 @@ nodes:
            ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
            ip tcp adjust-mss 1360
+           delay 100
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
            tunnel key 150
@@ -1762,19 +1791,22 @@ nodes:
            bandwidth 100000
            encapsulation dot1Q 13
            ip address 155.1.13.1 255.255.255.0
-           delay 100
+           delay 1000
+           ipv6 address 2001:155:1:13::1/64
           !
           interface GigabitEthernet0/1.100
            bandwidth 100000
            encapsulation dot1Q 100
            ip address 169.254.100.1 255.255.255.0
            delay 100
+           ipv6 address 2001:169:254:100::1/64
           !
           interface GigabitEthernet0/1.146
            bandwidth 100000
            encapsulation dot1Q 146
            ip address 155.1.146.1 255.255.255.0
-           delay 100
+           delay 1000
+           ipv6 address 2001:155:1:146::1/64
           !
           interface GigabitEthernet0/2
            no ip address
@@ -1891,9 +1923,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4147 bytes
+          Current configuration : 4388 bytes
           !
-          ! Last configuration change at 05:29:07 UTC Sun Sep 29 2024
+          ! Last configuration change at 06:59:26 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -1927,8 +1959,10 @@ nodes:
           !
           !
           !
+          no ip domain lookup
           ip cef
-          no ipv6 cef
+          ipv6 unicast-routing
+          ipv6 cef
           !
           multilink bundle-name authenticated
           !
@@ -1965,8 +1999,10 @@ nodes:
           !
           interface Loopback0
            ip address 150.1.2.2 255.255.255.255
+           ipv6 address 2001:150:2:2::2/128
           !
           interface Tunnel0
+           bandwidth 1000000
            ip address 155.1.0.2 255.255.255.0
            no ip redirects
            ip mtu 1400
@@ -1975,7 +2011,9 @@ nodes:
            ip nhrp network-id 1
            ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
+           no ip nhrp shortcut
            ip tcp adjust-mss 1360
+           delay 100
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
            tunnel key 150
@@ -2001,11 +2039,16 @@ nodes:
           interface GigabitEthernet0/1.23
            encapsulation dot1Q 23
            ip address 155.1.23.2 255.255.255.0
+           ipv6 address 2001:155:1:23::2/64
           !
           interface GigabitEthernet0/1.100
            bandwidth 100000
            encapsulation dot1Q 100
            ip address 169.254.100.2 255.255.255.0
+           ipv6 address 2001:169:254:100::2/64
+          !
+          interface GigabitEthernet0/1.146
+           delay 1000
           !
           interface GigabitEthernet0/2
            no ip address
@@ -2122,9 +2165,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4470 bytes
+          Current configuration : 4698 bytes
           !
-          ! Last configuration change at 05:29:09 UTC Sun Sep 29 2024
+          ! Last configuration change at 06:59:25 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -2158,8 +2201,10 @@ nodes:
           !
           !
           !
+          no ip domain lookup
           ip cef
-          no ipv6 cef
+          ipv6 unicast-routing
+          ipv6 cef
           !
           multilink bundle-name authenticated
           !
@@ -2196,8 +2241,10 @@ nodes:
           !
           interface Loopback0
            ip address 150.1.4.4 255.255.255.255
+           ipv6 address 2001:150:4:4::4/128
           !
           interface Tunnel0
+           bandwidth 1000000
            ip address 155.1.0.4 255.255.255.0
            no ip redirects
            ip mtu 1400
@@ -2207,6 +2254,7 @@ nodes:
            ip nhrp holdtime 300
            ip nhrp nhs 155.1.0.5
            ip tcp adjust-mss 1360
+           delay 100
            tunnel source GigabitEthernet0/1.100
            tunnel mode gre multipoint
            tunnel key 150
@@ -2233,18 +2281,22 @@ nodes:
            bandwidth 100000
            encapsulation dot1Q 45
            ip address 155.1.45.4 255.255.255.0
-           delay 99
+           delay 1000
+           ipv6 address 2001:155:1:45::4/64
           !
           interface GigabitEthernet0/1.100
            bandwidth 100000
            encapsulation dot1Q 100
            ip address 169.254.100.4 255.255.255.0
            delay 1000
+           ipv6 address 2001:169:254:100::4/64
           !
           interface GigabitEthernet0/1.146
+           bandwidth 100000
            encapsulation dot1Q 146
            ip address 155.1.146.4 255.255.255.0
            delay 1000
+           ipv6 address 2001:155:1:146::4/64
           !
           interface GigabitEthernet0/2
            no ip address
@@ -2366,9 +2418,9 @@ nodes:
         content: |-
           Building configuration...
 
-          Current configuration : 4276 bytes
+          Current configuration : 4686 bytes
           !
-          ! Last configuration change at 05:29:07 UTC Sun Sep 29 2024
+          ! Last configuration change at 06:59:18 UTC Sun Sep 29 2024
           !
           version 15.9
           service timestamps debug datetime msec
@@ -2402,8 +2454,10 @@ nodes:
           !
           !
           !
+          no ip domain lookup
           ip cef
-          no ipv6 cef
+          ipv6 unicast-routing
+          ipv6 cef
           !
           multilink bundle-name authenticated
           !
@@ -2440,8 +2494,10 @@ nodes:
           !
           interface Loopback0
            ip address 150.1.5.5 255.255.255.255
+           ipv6 address 2001:150:5:5::5/128
           !
           interface Tunnel0
+           bandwidth 100000
            ip address 155.1.0.5 255.255.255.0
            no ip redirects
            ip mtu 1400
@@ -2470,23 +2526,26 @@ nodes:
           interface GigabitEthernet0/1.5
            encapsulation dot1Q 5
            ip address 155.1.5.5 255.255.255.0
+           ipv6 address 2001:155:1:5::5/64
           !
           interface GigabitEthernet0/1.45
            bandwidth 100000
            encapsulation dot1Q 45
            ip address 155.1.45.5 255.255.255.0
-           delay 100
-           shutdown
+           delay 1000
+           ipv6 address 2001:155:1:45::5/64
           !
           interface GigabitEthernet0/1.58
            encapsulation dot1Q 58
            ip address 155.1.58.5 255.255.255.0
+           ipv6 address 2001:155:1:58::5/64
           !
           interface GigabitEthernet0/1.100
            bandwidth 100000
            encapsulation dot1Q 100
            ip address 169.254.100.5 255.255.255.0
            delay 1000
+           ipv6 address 2001:169:254:100::5/64
           !
           interface GigabitEthernet0/2
            no ip address
@@ -2506,6 +2565,15 @@ nodes:
           router eigrp XYZ
            !
            address-family ipv4 unicast autonomous-system 300
+            !
+            af-interface GigabitEthernet0/1.45
+             summary-address 150.1.0.0 255.255.240.0
+            exit-af-interface
+            !
+            af-interface Tunnel0
+             no next-hop-self
+             no split-horizon
+            exit-af-interface
             !
             topology base
             exit-af-topology
@@ -2997,7 +3065,7 @@ nodes:
 
           Current configuration : 3804 bytes
           !
-          ! Last configuration change at 00:44:27 UTC Fri Sep 27 2024
+          ! Last configuration change at 06:17:46 UTC Sun Sep 29 2024
           !
           version 15.2
           service timestamps debug datetime msec
@@ -3295,5 +3363,5 @@ links:
 lab:
   description: ''
   notes: ''
-  title: EIGRP TOPOLOGY INE
+  title: EIGRP DMVPN TOPOLOGY INE
   version: 0.2.2
